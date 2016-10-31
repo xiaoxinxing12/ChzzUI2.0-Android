@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">CHZZ_UI2.0</string>
+
+    <string name="gridview_demo">GridViewDemo</string>
+    <string name="normal_listview_demo">NormalListViewDemo</string>
+    <string name="normal_recyclerview_demo">NormalRecyclerViewDemo</string>
+    <string name="swipe_listview_demo">SwipeListViewDemo</string>
+    <string name="swipe_recyclerview_demo">SwipeRecyclerViewDemo</string>
+    <string name="staggeredgrid_demo">StaggeredGridDemo</string>
+    <string name="scrollview_demo">ScrollViewDemo</string>
+    <string name="normalview_demo">NormalViewDemo</string>
+    <string name="webview_demo">WebViewDemo</string>
+    <string name="sticky_nav_demo">StickyNavDemo</string>
+    <string name="color_msg_to"><![CDATA[<font color=\"#B3EB7D\">我发的</font><font color=\"#8E92DB\">彩色消息</font><font color=\"#38D369\">%1$s</font>]]></string>
+    <string name="color_msg_from"><![CDATA[<font color=\"#FD51EB\">她发的</font><font color=\"#EF8EB2\">彩色消息</font><font color=\"#9674FC\">%1$s</font>]]></string>
+    <string name="test_custom_header_title">我是标题标我是标题标我是标题标我是标题标我是标题标我是标题标</string>
+    <string name="test_custom_header_desc">我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述</string>
+</resources>
