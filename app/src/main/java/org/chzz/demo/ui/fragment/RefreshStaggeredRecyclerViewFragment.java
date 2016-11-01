@@ -12,7 +12,7 @@ import org.chzz.demo.R;
 import org.chzz.demo.adapter.StaggeredRecyclerViewAdapter;
 import org.chzz.demo.engine.DataEngine;
 import org.chzz.demo.model.StaggeredModel;
-import org.chzz.demo.ui.activity.MainActivity;
+import org.chzz.demo.ui.activity.RefreshActivity;
 import org.chzz.demo.util.ThreadUtil;
 import org.chzz.refresh.CHZZNormalRefreshViewHolder;
 import org.chzz.refresh.CHZZRefreshLayout;
@@ -97,7 +97,7 @@ public class RefreshStaggeredRecyclerViewFragment extends BaseFragment implement
                         mAdapter.addNewData(response.body());
                         mDataRv.smoothScrollToPosition(0);
                     }
-                }, MainActivity.LOADING_DURATION);
+                }, RefreshActivity.LOADING_DURATION);
             }
 
             @Override
@@ -124,7 +124,7 @@ public class RefreshStaggeredRecyclerViewFragment extends BaseFragment implement
                         mRefreshLayout.endLoadingMore();
                         mAdapter.addMoreData(response.body());
                     }
-                }, MainActivity.LOADING_DURATION);
+                }, RefreshActivity.LOADING_DURATION);
             }
 
             @Override

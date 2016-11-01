@@ -16,7 +16,7 @@ import org.chzz.adapter.CHZZOnRVItemLongClickListener;
 import org.chzz.demo.R;
 import org.chzz.demo.adapter.NormalRecyclerViewAdapter;
 import org.chzz.demo.model.RefreshModel;
-import org.chzz.demo.ui.activity.MainActivity;
+import org.chzz.demo.ui.activity.RefreshActivity;
 import org.chzz.demo.util.ThreadUtil;
 import org.chzz.demo.util.ToastUtil;
 import org.chzz.demo.widget.Divider;
@@ -98,7 +98,7 @@ public class RefreshRecyclerViewFragment extends BaseFragment implements CHZZRef
 
         CHZZStickinessRefreshViewHolder stickinessRefreshViewHolder = new CHZZStickinessRefreshViewHolder(mApp, true);
         stickinessRefreshViewHolder.setStickinessColor(R.color.colorPrimary);
-        stickinessRefreshViewHolder.setRotateImage(R.mipmap.bga_refresh_stickiness);
+        stickinessRefreshViewHolder.setRotateImage(R.mipmap.chzz_refresh_stickiness);
         mRefreshLayout.setRefreshViewHolder(stickinessRefreshViewHolder);
 
         mDataRv.addItemDecoration(new Divider(mApp));
@@ -146,7 +146,7 @@ public class RefreshRecyclerViewFragment extends BaseFragment implements CHZZRef
                         mAdapter.addNewData(response.body());
                         mDataRv.smoothScrollToPosition(0);
                     }
-                }, MainActivity.LOADING_DURATION);
+                }, RefreshActivity.LOADING_DURATION);
             }
 
             @Override
@@ -177,7 +177,7 @@ public class RefreshRecyclerViewFragment extends BaseFragment implements CHZZRef
                         dismissLoadingDialog();
                         mAdapter.addMoreData(response.body());
                     }
-                }, MainActivity.LOADING_DURATION);
+                }, RefreshActivity.LOADING_DURATION);
             }
 
             @Override

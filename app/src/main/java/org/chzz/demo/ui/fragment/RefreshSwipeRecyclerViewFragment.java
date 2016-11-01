@@ -14,7 +14,7 @@ import org.chzz.demo.R;
 import org.chzz.demo.adapter.SwipeRecyclerViewAdapter;
 import org.chzz.demo.engine.DataEngine;
 import org.chzz.demo.model.RefreshModel;
-import org.chzz.demo.ui.activity.MainActivity;
+import org.chzz.demo.ui.activity.RefreshActivity;
 import org.chzz.demo.util.ThreadUtil;
 import org.chzz.demo.widget.Divider;
 import org.chzz.refresh.CHZZMoocStyleRefreshViewHolder;
@@ -116,7 +116,7 @@ public class RefreshSwipeRecyclerViewFragment extends BaseFragment implements CH
                         mAdapter.addNewData(response.body());
                         mDataRv.smoothScrollToPosition(0);
                     }
-                }, MainActivity.LOADING_DURATION);
+                }, RefreshActivity.LOADING_DURATION);
             }
 
             @Override
@@ -143,7 +143,7 @@ public class RefreshSwipeRecyclerViewFragment extends BaseFragment implements CH
                         mRefreshLayout.endLoadingMore();
                         mAdapter.addMoreData(response.body());
                     }
-                }, MainActivity.LOADING_DURATION);
+                }, RefreshActivity.LOADING_DURATION);
             }
 
             @Override

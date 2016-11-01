@@ -13,7 +13,7 @@ import org.chzz.demo.R;
 import org.chzz.demo.adapter.NormalAdapterViewAdapter;
 import org.chzz.demo.engine.DataEngine;
 import org.chzz.demo.model.RefreshModel;
-import org.chzz.demo.ui.activity.MainActivity;
+import org.chzz.demo.ui.activity.RefreshActivity;
 import org.chzz.demo.util.ThreadUtil;
 import org.chzz.refresh.CHZZMoocStyleRefreshViewHolder;
 import org.chzz.refresh.CHZZRefreshLayout;
@@ -117,7 +117,7 @@ public class RefreshListViewFragment extends BaseFragment implements CHZZRefresh
                         mRefreshLayout.endRefreshing();
                         mAdapter.addNewData(response.body());
                     }
-                }, MainActivity.LOADING_DURATION);
+                }, RefreshActivity.LOADING_DURATION);
             }
 
             @Override
@@ -147,7 +147,7 @@ public class RefreshListViewFragment extends BaseFragment implements CHZZRefresh
                         dismissLoadingDialog();
                         mAdapter.addMoreData(response.body());
                     }
-                }, MainActivity.LOADING_DURATION);
+                }, RefreshActivity.LOADING_DURATION);
             }
 
             @Override

@@ -20,8 +20,8 @@ import org.chzz.demo.ui.fragment.StickyNavScrollViewFragment;
 import org.chzz.demo.ui.fragment.StickyNavWebViewFragment;
 import org.chzz.refresh.CHZZNormalRefreshViewHolder;
 import org.chzz.refresh.CHZZRefreshLayout;
+import org.chzz.widget.CHZZFixedIndicator;
 
-import cn.bingoogolapple.bgaindicator.BGAFixedIndicator;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -29,7 +29,7 @@ import retrofit2.Response;
 public class ViewPagerActivity extends BaseActivity implements CHZZRefreshLayout.CHZZRefreshLayoutDelegate {
     private CHZZRefreshLayout mRefreshLayout;
     private CHZZBanner mBanner;
-    private BGAFixedIndicator mIndicator;
+    private CHZZFixedIndicator mIndicator;
     private ViewPager mContentVp;
 
     private Fragment[] mFragments;

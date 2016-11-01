@@ -61,7 +61,7 @@ public class ScrollViewActivity extends BaseActivity implements CHZZRefreshLayou
             @Override
             protected Void doInBackground(Void... params) {
                 try {
-                    Thread.sleep(MainActivity.LOADING_DURATION);
+                    Thread.sleep(RefreshActivity.LOADING_DURATION);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -89,7 +89,7 @@ public class ScrollViewActivity extends BaseActivity implements CHZZRefreshLayou
             @Override
             protected Void doInBackground(Void... params) {
                 try {
-                    Thread.sleep(MainActivity.LOADING_DURATION);
+                    Thread.sleep(RefreshActivity.LOADING_DURATION);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }

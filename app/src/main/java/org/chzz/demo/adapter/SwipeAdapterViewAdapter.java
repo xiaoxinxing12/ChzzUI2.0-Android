@@ -6,11 +6,12 @@ import org.chzz.adapter.CHZZAdapterViewAdapter;
 import org.chzz.adapter.CHZZViewHolderHelper;
 import org.chzz.demo.R;
 import org.chzz.demo.model.RefreshModel;
+import org.chzz.widget.CHZZSwipeItemLayout;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import cn.bingoogolapple.swipeitemlayout.BGASwipeItemLayout;
+
 
 
 /**
@@ -22,7 +23,7 @@ public class SwipeAdapterViewAdapter extends CHZZAdapterViewAdapter<RefreshModel
     /**
      * 当前处于打开状态的item
      */
-    private List<BGASwipeItemLayout> mOpenedSil = new ArrayList<>();
+    private List<CHZZSwipeItemLayout> mOpenedSil = new ArrayList<>();
 
     public SwipeAdapterViewAdapter(Context context) {
         super(context, R.layout.item_swipe);
@@ -30,21 +31,21 @@ public class SwipeAdapterViewAdapter extends CHZZAdapterViewAdapter<RefreshModel
 
     @Override
     protected void setItemChildListener(CHZZViewHolderHelper viewHolderHelper) {
-        BGASwipeItemLayout swipeItemLayout = viewHolderHelper.getView(R.id.sil_item_swipe_root);
-        swipeItemLayout.setDelegate(new BGASwipeItemLayout.BGASwipeItemLayoutDelegate() {
+        CHZZSwipeItemLayout swipeItemLayout = viewHolderHelper.getView(R.id.sil_item_swipe_root);
+        swipeItemLayout.setDelegate(new CHZZSwipeItemLayout.CHZZSwipeItemLayoutDelegate() {
             @Override
-            public void onBGASwipeItemLayoutOpened(BGASwipeItemLayout swipeItemLayout) {
+            public void onCHZZSwipeItemLayoutOpened(CHZZSwipeItemLayout swipeItemLayout) {
                 closeOpenedSwipeItemLayoutWithAnim();
                 mOpenedSil.add(swipeItemLayout);
             }
 
             @Override
-            public void onBGASwipeItemLayoutClosed(BGASwipeItemLayout swipeItemLayout) {
+            public void onCHZZSwipeItemLayoutClosed(CHZZSwipeItemLayout swipeItemLayout) {
                 mOpenedSil.remove(swipeItemLayout);
             }
 
             @Override
-            public void onBGASwipeItemLayoutStartOpen(BGASwipeItemLayout swipeItemLayout) {
+            public void onCHZZSwipeItemLayoutStartOpen(CHZZSwipeItemLayout swipeItemLayout) {
                 closeOpenedSwipeItemLayoutWithAnim();
             }
         });
@@ -58,14 +59,14 @@ public class SwipeAdapterViewAdapter extends CHZZAdapterViewAdapter<RefreshModel
     }
 
     public void closeOpenedSwipeItemLayoutWithAnim() {
-        for (BGASwipeItemLayout sil : mOpenedSil) {
+        for (CHZZSwipeItemLayout sil : mOpenedSil) {
             sil.closeWithAnim();
         }
         mOpenedSil.clear();
     }
 
     public void closeOpenedSwipeItemLayout() {
-        for (BGASwipeItemLayout sil : mOpenedSil) {
+        for (CHZZSwipeItemLayout sil : mOpenedSil) {
             sil.close();
         }
         mOpenedSil.clear();

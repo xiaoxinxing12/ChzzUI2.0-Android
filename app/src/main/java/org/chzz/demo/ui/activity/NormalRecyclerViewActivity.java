@@ -168,7 +168,7 @@ public class NormalRecyclerViewActivity extends BaseActivity implements CHZZOnRV
                         mAdapter.addNewData(response.body());
                         mDataRv.smoothScrollToPosition(0);
                     }
-                }, MainActivity.LOADING_DURATION);
+                }, RefreshActivity.LOADING_DURATION);
             }
 
             @Override
@@ -199,7 +199,7 @@ public class NormalRecyclerViewActivity extends BaseActivity implements CHZZOnRV
                         dismissLoadingDialog();
                         mAdapter.addMoreData(response.body());
                     }
-                }, MainActivity.LOADING_DURATION);
+                }, RefreshActivity.LOADING_DURATION);
             }
 
             @Override

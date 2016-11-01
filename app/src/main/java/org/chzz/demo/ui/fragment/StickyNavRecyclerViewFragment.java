@@ -13,7 +13,7 @@ import org.chzz.adapter.CHZZOnRVItemLongClickListener;
 import org.chzz.demo.R;
 import org.chzz.demo.adapter.NormalRecyclerViewAdapter;
 import org.chzz.demo.model.RefreshModel;
-import org.chzz.demo.ui.activity.MainActivity;
+import org.chzz.demo.ui.activity.RefreshActivity;
 import org.chzz.demo.ui.activity.ViewPagerActivity;
 import org.chzz.demo.util.ThreadUtil;
 import org.chzz.demo.widget.Divider;
@@ -124,7 +124,7 @@ public class StickyNavRecyclerViewFragment extends BaseFragment implements CHZZO
                         mAdapter.addNewData(response.body());
                         mDataRv.smoothScrollToPosition(0);
                     }
-                }, MainActivity.LOADING_DURATION);
+                }, RefreshActivity.LOADING_DURATION);
             }
 
             @Override
@@ -156,7 +156,7 @@ public class StickyNavRecyclerViewFragment extends BaseFragment implements CHZZO
                         dismissLoadingDialog();
                         mAdapter.addMoreData(response.body());
                     }
-                }, MainActivity.LOADING_DURATION);
+                }, RefreshActivity.LOADING_DURATION);
             }
 
             @Override

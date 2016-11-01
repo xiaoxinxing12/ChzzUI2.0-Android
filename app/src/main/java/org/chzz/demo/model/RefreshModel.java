@@ -8,12 +8,15 @@ package org.chzz.demo.model;
 public class RefreshModel {
     public String title;
     public String detail;
+    public String avatorPath;
+    public boolean selected;
 
     public RefreshModel() {
     }
 
-    public RefreshModel(String title, String detail) {
+    public RefreshModel(String title, String detail, String avatorPath) {
         this.title = title;
         this.detail = detail;
+        this.avatorPath = avatorPath;
     }
 }

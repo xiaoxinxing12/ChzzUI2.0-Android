@@ -16,7 +16,7 @@
             app:banner_tipTextSize="12sp"
             app:banner_transitionEffect="accordion" />
 
-        <cn.bingoogolapple.bgaindicator.BGAFixedIndicator
+        <org.chzz.widget.CHZZFixedIndicator
             android:id="@+id/indicator"
             android:layout_width="match_parent"
             android:layout_height="40dp"

@@ -53,7 +53,7 @@ public class CHZZBanner extends RelativeLayout implements CHZZViewPager.AutoPlay
     private int mPointContainerLeftRightPadding;
     private int mTipTextSize;
     private int mTipTextColor = Color.WHITE;
-    private int mPointDrawableResId = R.drawable.bga_banner_selector_point_solid;
+    private int mPointDrawableResId = R.drawable.chzz_banner_selector_point_solid;
     private Drawable mPointContainerBackgroundDrawable;
     private AutoPlayTask mAutoPlayTask;
     private int mPageScrollPosition;
@@ -108,7 +108,7 @@ public class CHZZBanner extends RelativeLayout implements CHZZViewPager.AutoPlay
 
     private void initCustomAttr(int attr, TypedArray typedArray) {
         if (attr == R.styleable.CHZZBanner_banner_pointDrawable) {
-            mPointDrawableResId = typedArray.getResourceId(attr, R.drawable.bga_banner_selector_point_solid);
+            mPointDrawableResId = typedArray.getResourceId(attr, R.drawable.chzz_banner_selector_point_solid);
         } else if (attr == R.styleable.CHZZBanner_banner_pointContainerBackground) {
             mPointContainerBackgroundDrawable = typedArray.getDrawable(attr);
         } else if (attr == R.styleable.CHZZBanner_banner_pointLeftRightMargin) {
@@ -303,7 +303,7 @@ public class CHZZBanner extends RelativeLayout implements CHZZViewPager.AutoPlay
      * @param tips   每一页的提示文案集合
      */
     public void setData(List<? extends Object> models, List<String> tips) {
-        setData(R.layout.bga_banner_item_image, models, tips);
+        setData(R.layout.chzz_banner_item_image, models, tips);
     }
 
     /**

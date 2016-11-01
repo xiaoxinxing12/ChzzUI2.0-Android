@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import org.chzz.demo.R;
 import org.chzz.demo.engine.DataEngine;
-import org.chzz.demo.ui.activity.MainActivity;
+import org.chzz.demo.ui.activity.RefreshActivity;
 import org.chzz.refresh.CHZZRefreshLayout;
 import org.chzz.refresh.CHZZStickinessRefreshViewHolder;
 
@@ -46,7 +46,7 @@ public class RefreshNormalViewFragment extends BaseFragment implements CHZZRefre
     protected void processLogic(Bundle savedInstanceState) {
         CHZZStickinessRefreshViewHolder stickinessRefreshViewHolder = new CHZZStickinessRefreshViewHolder(mApp, true);
         stickinessRefreshViewHolder.setStickinessColor(R.color.colorPrimary);
-        stickinessRefreshViewHolder.setRotateImage(R.mipmap.bga_refresh_stickiness);
+        stickinessRefreshViewHolder.setRotateImage(R.mipmap.chzz_refresh_stickiness);
         mRefreshLayout.setRefreshViewHolder(stickinessRefreshViewHolder);
 
         mRefreshLayout.setCustomHeaderView(DataEngine.getCustomHeaderView(mApp), false);
@@ -64,7 +64,7 @@ public class RefreshNormalViewFragment extends BaseFragment implements CHZZRefre
             @Override
             protected Void doInBackground(Void... params) {
                 try {
-                    Thread.sleep(MainActivity.LOADING_DURATION);
+                    Thread.sleep(RefreshActivity.LOADING_DURATION);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -86,7 +86,7 @@ public class RefreshNormalViewFragment extends BaseFragment implements CHZZRefre
             @Override
             protected Void doInBackground(Void... params) {
                 try {
-                    Thread.sleep(MainActivity.LOADING_DURATION);
+                    Thread.sleep(RefreshActivity.LOADING_DURATION);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }

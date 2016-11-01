@@ -30,6 +30,7 @@ dependencies {
     compile 'com.squareup.retrofit2:retrofit:2.1.0'
     compile 'com.squareup.retrofit2:converter-gson:2.1.0'
 
-    compile 'cn.bingoogolapple:bga-swipeitemlayout:1.0.4@aar'
-    compile 'cn.bingoogolapple:bga-indicator:1.0.1@aar'
+
+    //注解
+    compile 'com.jakewharton:butterknife:7.0.1'
 }

@@ -13,7 +13,7 @@ import org.chzz.demo.R;
 import org.chzz.demo.adapter.SwipeAdapterViewAdapter;
 import org.chzz.demo.engine.DataEngine;
 import org.chzz.demo.model.RefreshModel;
-import org.chzz.demo.ui.activity.MainActivity;
+import org.chzz.demo.ui.activity.RefreshActivity;
 import org.chzz.demo.util.ThreadUtil;
 import org.chzz.refresh.CHZZMeiTuanRefreshViewHolder;
 import org.chzz.refresh.CHZZRefreshLayout;
@@ -71,9 +71,9 @@ public class RefreshSwipeListViewFragment extends BaseFragment implements CHZZRe
     @Override
     protected void processLogic(Bundle savedInstanceState) {
         CHZZMeiTuanRefreshViewHolder meiTuanRefreshViewHolder = new CHZZMeiTuanRefreshViewHolder(mApp, true);
-        meiTuanRefreshViewHolder.setPullDownImageResource(R.mipmap.bga_refresh_mt_pull_down);
-        meiTuanRefreshViewHolder.setChangeToReleaseRefreshAnimResId(R.drawable.bga_refresh_mt_change_to_release_refresh);
-        meiTuanRefreshViewHolder.setRefreshingAnimResId(R.drawable.bga_refresh_mt_refreshing);
+        meiTuanRefreshViewHolder.setPullDownImageResource(R.mipmap.chzz_refresh_mt_pull_down);
+        meiTuanRefreshViewHolder.setChangeToReleaseRefreshAnimResId(R.drawable.chzz_refresh_mt_change_to_release_refresh);
+        meiTuanRefreshViewHolder.setRefreshingAnimResId(R.drawable.chzz_refresh_mt_refreshing);
 
         mRefreshLayout.setRefreshViewHolder(meiTuanRefreshViewHolder);
         mRefreshLayout.setCustomHeaderView(DataEngine.getCustomHeaderView(mApp), true);
@@ -114,7 +114,7 @@ public class RefreshSwipeListViewFragment extends BaseFragment implements CHZZRe
                         mRefreshLayout.endRefreshing();
                         mAdapter.addNewData(response.body());
                     }
-                }, MainActivity.LOADING_DURATION);
+                }, RefreshActivity.LOADING_DURATION);
             }
 
             @Override
@@ -141,7 +141,7 @@ public class RefreshSwipeListViewFragment extends BaseFragment implements CHZZRe
                         mRefreshLayout.endLoadingMore();
                         mAdapter.addMoreData(response.body());
                     }
-                }, MainActivity.LOADING_DURATION);
+                }, RefreshActivity.LOADING_DURATION);
             }
 
             @Override

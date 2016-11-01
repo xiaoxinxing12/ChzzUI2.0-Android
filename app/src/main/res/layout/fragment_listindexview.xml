@@ -37,7 +37,7 @@
         android:visibility="gone"
         tools:visibility="visible" />
 
-    <org.chzz.demo.ui.widget.IndexView
+    <org.chzz.demo.widget.IndexView
         android:id="@+id/indexview"
         android:layout_width="40dp"
         android:layout_height="match_parent"

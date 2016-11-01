@@ -15,6 +15,8 @@ import org.chzz.demo.model.RefreshModel;
  * 描述:
  */
 public class NormalRecyclerViewAdapter extends CHZZRecyclerViewAdapter<RefreshModel> {
+    private boolean ignoreChange;
+
     public NormalRecyclerViewAdapter(RecyclerView recyclerView) {
         super(recyclerView, R.layout.item_normal);
     }
@@ -28,5 +30,9 @@ public class NormalRecyclerViewAdapter extends CHZZRecyclerViewAdapter<RefreshMo
     @Override
     public void fillData(CHZZViewHolderHelper viewHolderHelper, int position, RefreshModel model) {
         viewHolderHelper.setText(R.id.tv_item_normal_title, model.title).setText(R.id.tv_item_normal_detail, model.detail);
+    }
+
+    public boolean isIgnoreChange() {
+        return ignoreChange;
     }
 }

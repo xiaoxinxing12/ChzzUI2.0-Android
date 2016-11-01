@@ -11,7 +11,7 @@ import org.chzz.adapter.CHZZOnItemChildLongClickListener;
 import org.chzz.demo.R;
 import org.chzz.demo.adapter.NormalAdapterViewAdapter;
 import org.chzz.demo.model.RefreshModel;
-import org.chzz.demo.ui.activity.MainActivity;
+import org.chzz.demo.ui.activity.RefreshActivity;
 import org.chzz.demo.ui.activity.ViewPagerActivity;
 import org.chzz.demo.util.ThreadUtil;
 import org.chzz.refresh.CHZZRefreshLayout;
@@ -116,7 +116,7 @@ public class StickyNavListViewFragment extends BaseFragment implements AdapterVi
                         dismissLoadingDialog();
                         mAdapter.addNewData(response.body());
                     }
-                }, MainActivity.LOADING_DURATION);
+                }, RefreshActivity.LOADING_DURATION);
             }
 
             @Override
@@ -146,7 +146,7 @@ public class StickyNavListViewFragment extends BaseFragment implements AdapterVi
                         dismissLoadingDialog();
                         mAdapter.addMoreData(response.body());
                     }
-                }, MainActivity.LOADING_DURATION);
+                }, RefreshActivity.LOADING_DURATION);
             }
 
             @Override

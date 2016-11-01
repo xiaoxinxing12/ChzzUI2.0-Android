@@ -15,6 +15,8 @@ import org.chzz.demo.model.RefreshModel;
  */
 public class NormalAdapterViewAdapter extends CHZZAdapterViewAdapter<RefreshModel> {
 
+    private boolean ignoreChange;
+
     public NormalAdapterViewAdapter(Context context) {
         super(context, R.layout.item_normal);
     }
@@ -28,5 +30,9 @@ public class NormalAdapterViewAdapter extends CHZZAdapterViewAdapter<RefreshMode
     @Override
     public void fillData(CHZZViewHolderHelper viewHolderHelper, int position, RefreshModel model) {
         viewHolderHelper.setText(R.id.tv_item_normal_title, model.title).setText(R.id.tv_item_normal_detail, model.detail);
+    }
+
+    public boolean isIgnoreChange() {
+        return ignoreChange;
     }
 }

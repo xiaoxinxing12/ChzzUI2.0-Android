@@ -22,7 +22,7 @@ public class App extends Application {
         sInstance = this;
 
         mEngine = new Retrofit.Builder()
-                .baseUrl("http://7xk9dj.com1.z0.glb.clouddn.com/")
+                .baseUrl("http://www.chzz.org:8081/detail/api/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build().create(Engine.class);
     }

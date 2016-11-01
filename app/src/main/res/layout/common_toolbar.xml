@@ -18,7 +18,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:singleLine="true"
-
+            android:textSize="@dimen/b18_font"
+            android:textStyle="bold"
+            android:textColor="@color/white"
             tools:text="标题" />
 
     </android.support.v7.widget.Toolbar>

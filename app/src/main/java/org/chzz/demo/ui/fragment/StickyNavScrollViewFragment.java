@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import org.chzz.demo.R;
-import org.chzz.demo.ui.activity.MainActivity;
+import org.chzz.demo.ui.activity.RefreshActivity;
 import org.chzz.demo.ui.activity.ViewPagerActivity;
 import org.chzz.refresh.CHZZRefreshLayout;
 
@@ -56,7 +56,7 @@ public class StickyNavScrollViewFragment extends BaseFragment implements CHZZRef
             @Override
             protected Void doInBackground(Void... params) {
                 try {
-                    Thread.sleep(MainActivity.LOADING_DURATION);
+                    Thread.sleep(RefreshActivity.LOADING_DURATION);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -84,7 +84,7 @@ public class StickyNavScrollViewFragment extends BaseFragment implements CHZZRef
             @Override
             protected Void doInBackground(Void... params) {
                 try {
-                    Thread.sleep(MainActivity.LOADING_DURATION);
+                    Thread.sleep(RefreshActivity.LOADING_DURATION);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
