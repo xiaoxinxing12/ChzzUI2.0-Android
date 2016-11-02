@@ -12,24 +12,24 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:icon">
-        <activity android:name="org.chzz.demo.ui.activity.MainActivity">
+        <activity android:name="org.chzz.demo.view.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.RefreshActivity" />
-        <activity android:name=".ui.activity.StickyNavActivity" />
-        <activity android:name=".ui.activity.ViewPagerActivity" />
-        <activity android:name=".ui.activity.BannerActivity" />
-        <activity android:name=".ui.activity.ListViewDemoActivity" />
-        <activity android:name=".ui.activity.AdapterActivity" />
-        <activity android:name=".ui.activity.IndicatorActivity" />
-        <activity android:name=".ui.activity.SimpleHomeActivity" />
-        <activity android:name=".ui.activity.SlidingTabActivity" />
-        <activity android:name=".ui.activity.CommonTabActivity" />
-        <activity android:name=".ui.activity.SegmentTabActivity" />
+        <activity android:name=".view.activity.RefreshActivity" />
+        <activity android:name=".view.activity.StickyNavActivity" />
+        <activity android:name=".view.activity.ViewPagerActivity" />
+        <activity android:name=".view.activity.BannerActivity" />
+        <activity android:name=".view.activity.ListViewDemoActivity" />
+        <activity android:name=".view.activity.AdapterActivity" />
+        <activity android:name=".view.activity.IndicatorActivity" />
+        <activity android:name=".view.activity.SimpleHomeActivity" />
+        <activity android:name=".view.activity.SlidingTabActivity" />
+        <activity android:name=".view.activity.CommonTabActivity" />
+        <activity android:name=".view.activity.SegmentTabActivity" />
     </application>
 
 </manifest>
