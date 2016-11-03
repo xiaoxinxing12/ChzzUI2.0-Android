@@ -12,7 +12,7 @@ import retrofit2.http.Path;
 import retrofit2.http.Url;
 
 /**
- * 作者:王浩 邮件:bingoogolapple@gmail.com
+ * 作者:copy 邮件:2499551993@qq.com
  * 创建时间:15/9/17 下午2:01
  * 描述:
  */

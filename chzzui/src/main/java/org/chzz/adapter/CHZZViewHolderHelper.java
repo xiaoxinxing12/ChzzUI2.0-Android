@@ -243,6 +243,7 @@ public class CHZZViewHolderHelper implements View.OnClickListener, View.OnLongCl
         if (text == null) {
             text = "";
         }
+        if(getTextView(viewId)!=null)
         getTextView(viewId).setText(text);
         return this;
     }

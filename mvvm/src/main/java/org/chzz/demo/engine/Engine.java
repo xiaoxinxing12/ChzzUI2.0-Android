@@ -1,9 +1,11 @@
 package org.chzz.demo.engine;
 
+import org.chzz.demo.model.BannerModel;
 import org.chzz.demo.model.RefreshModel;
 
 import java.util.List;
 
+import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Path;
 import rx.Observable;
@@ -26,4 +28,7 @@ public interface Engine {
 
     @GET("newdata{pageNumber}.json")
     Observable<List<RefreshModel>> loadNewData(@Path("pageNumber") int pageNumber);
+
+    @GET("5item.json")
+    Call<BannerModel> getBannerModel();
 }

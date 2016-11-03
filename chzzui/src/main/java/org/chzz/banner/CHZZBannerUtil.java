@@ -11,7 +11,7 @@ import com.nineoldandroids.view.ViewHelper;
 import java.util.List;
 
 /**
- * 作者:王浩 邮件:bingoogolapple@gmail.com
+ * 作者:copy 邮件:2499551993@qq.com
  * 创建时间:16/7/5 上午11:34
  * 描述:
  */

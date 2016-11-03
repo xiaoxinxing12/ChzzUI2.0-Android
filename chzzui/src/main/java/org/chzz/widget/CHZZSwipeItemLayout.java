@@ -22,7 +22,7 @@ import org.chzz.R;
 import java.lang.reflect.Method;
 
 /**
- * 作者:王浩 邮件:bingoogolapple@gmail.com
+ * 作者:copy 邮件:2499551993@qq.com
  * 创建时间:15/5/26 上午2:07
  * 描述:适用于AbsListView和RecyclerView的水平方向滑动item。【作为AbsListView的item单击和长按参考代码家的https://github.com/daimajia/AndroidSwipeLayout】
  */

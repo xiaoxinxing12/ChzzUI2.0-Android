@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.FrameLayout;
 
 /**
- * 作者:王浩 邮件:bingoogolapple@gmail.com
+ * 作者:copy 邮件:2499551993@qq.com
  * 创建时间:16/8/7 上午11:39
  * 描述:引导界面联动布局，将每一个触摸事件分发给所有的子控件。
  */

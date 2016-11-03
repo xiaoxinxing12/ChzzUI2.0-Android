@@ -11,7 +11,7 @@ import org.chzz.demo.view.activity.ViewPagerActivity;
 import org.chzz.refresh.CHZZRefreshLayout;
 
 /**
- * 作者:王浩 邮件:bingoogolapple@gmail.com
+ * 作者:copy 邮件:2499551993@qq.com
  * 创建时间:15/9/27 下午12:53
  * 描述:
  */

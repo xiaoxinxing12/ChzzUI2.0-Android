@@ -5,7 +5,7 @@ import android.view.View;
 import com.nineoldandroids.view.ViewHelper;
 
 /**
- * 作者:王浩 邮件:bingoogolapple@gmail.com
+ * 作者:copy 邮件:2499551993@qq.com
  * 创建时间:15/6/19 17:39
  * 描述:
  */

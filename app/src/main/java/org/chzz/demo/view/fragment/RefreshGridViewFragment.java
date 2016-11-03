@@ -25,7 +25,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 /**
- * 作者:王浩 邮件:bingoogolapple@gmail.com
+ * 作者:copy 邮件:2499551993@qq.com
  * 创建时间:15/7/10 17:45
  * 描述:
  */
