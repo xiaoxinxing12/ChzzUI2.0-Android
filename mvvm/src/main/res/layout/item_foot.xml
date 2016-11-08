@@ -1,13 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="100dp"
-    android:orientation="vertical">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <TextView
-        android:id="@+id/tv_foot"
+    <data>
+
+        <variable
+            name="viewModel"
+            type="org.chzz.demo.viewmodel.RefreshViewModel" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/foot"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@color/colorPrimary"
-        android:text="Foot" />
-</LinearLayout>
+        android:layout_height="100dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_foot"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary"
+            android:onClick="@{viewModel.onFootClicks}"
+            android:text="Foot" />
+    </LinearLayout>
+</layout>

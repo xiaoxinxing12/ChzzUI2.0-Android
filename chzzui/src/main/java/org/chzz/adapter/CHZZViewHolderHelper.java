@@ -17,6 +17,7 @@
 package org.chzz.adapter;
 
 import android.content.Context;
+import android.databinding.ViewDataBinding;
 import android.graphics.Bitmap;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
@@ -49,8 +50,9 @@ public class CHZZViewHolderHelper implements View.OnClickListener, View.OnLongCl
     protected Context mContext;
     protected int mPosition;
     protected CHZZRecyclerViewHolder mRecyclerViewHolder;
+    protected CHZZDataBindingHolder mDataBindingHolder;
     protected RecyclerView mRecyclerView;
-
+    protected ViewDataBinding mBinding;
     protected ViewGroup mAdapterView;
     /**
      * 留着以后作为扩充对象
@@ -71,12 +73,34 @@ public class CHZZViewHolderHelper implements View.OnClickListener, View.OnLongCl
         mContext = convertView.getContext();
     }
 
+    public CHZZViewHolderHelper(ViewDataBinding binding, View item) {
+        mViews = new SparseArray<>();
+        mBinding = binding;
+        mContext = item.getContext();
+    }
+
     public void setRecyclerViewHolder(CHZZRecyclerViewHolder recyclerViewHolder) {
         mRecyclerViewHolder = recyclerViewHolder;
     }
 
+    public void setRecyclerViewHolder(CHZZDataBindingHolder recyclerViewHolder) {
+        mDataBindingHolder = recyclerViewHolder;
+    }
+
+    public ViewDataBinding getmBinding() {
+        return mBinding;
+    }
+
+    public void setmBinding(ViewDataBinding mBinding) {
+        this.mBinding = mBinding;
+    }
+
     public CHZZRecyclerViewHolder getRecyclerViewHolder() {
         return mRecyclerViewHolder;
+    }
+
+    public CHZZDataBindingHolder getmDataBindingHolder() {
+        return mDataBindingHolder;
     }
 
     public void setPosition(int position) {
@@ -86,6 +110,9 @@ public class CHZZViewHolderHelper implements View.OnClickListener, View.OnLongCl
     public int getPosition() {
         if (mRecyclerViewHolder != null) {
             return mRecyclerViewHolder.getAdapterPosition();
+        }
+        if (mDataBindingHolder != null) {
+            return mDataBindingHolder.getAdapterPosition();
         }
         return mPosition;
     }
@@ -243,8 +270,8 @@ public class CHZZViewHolderHelper implements View.OnClickListener, View.OnLongCl
         if (text == null) {
             text = "";
         }
-        if(getTextView(viewId)!=null)
-        getTextView(viewId).setText(text);
+        if (getTextView(viewId) != null)
+            getTextView(viewId).setText(text);
         return this;
     }
 

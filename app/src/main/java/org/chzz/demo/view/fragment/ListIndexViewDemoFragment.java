@@ -12,6 +12,7 @@ import org.chzz.demo.R;
 import org.chzz.demo.adapter.ListIndexAdapter;
 import org.chzz.demo.engine.DataEngine;
 import org.chzz.demo.model.IndexModel;
+import org.chzz.demo.util.ToastUtil;
 import org.chzz.demo.widget.IndexView;
 
 import java.util.List;
@@ -93,7 +94,7 @@ public class ListIndexViewDemoFragment extends BaseFragment implements CHZZOnIte
     @Override
     public void onItemChildClick(ViewGroup parent, View childView, int position) {
         if (childView.getId() == R.id.tv_item_indexview_name) {
-
+            ToastUtil.show("position"+position);
         }
     }
 }

@@ -117,7 +117,7 @@ public class MainActivity extends BaseActivity implements CHZZRefreshLayout.CHZZ
         TextView h = (TextView) head.findViewById(R.id.tv_head);
         List<View> footView = new ArrayList<>();
         footView.add(View.inflate(this, R.layout.item_foot, null));
-        adapter = new NormalRecyclerViewAdapter(mRvTest,head,null);
+       // adapter = new NormalRecyclerViewAdapter(mRvTest,head,null);
       //  adapter.addHeadView(head);
         mRefreshLayout.setDelegate(this);
         CHZZMoocStyleRefreshViewHolder leftRefreshViewHolder = new CHZZMoocStyleRefreshViewHolder(mApp, false);
