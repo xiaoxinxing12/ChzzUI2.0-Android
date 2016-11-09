@@ -17,6 +17,7 @@ import org.chzz.demo.model.RefreshModel;
 import org.chzz.demo.util.ThreadUtil;
 import org.chzz.demo.util.ToastUtil;
 import org.chzz.demo.viewmodel.RefreshViewModel;
+import org.chzz.dragview.view.CHZZDragView;
 import org.chzz.refresh.CHZZMoocStyleRefreshViewHolder;
 import org.chzz.refresh.CHZZRefreshLayout;
 
@@ -44,7 +45,7 @@ public class RefreshActivity extends BaseActivity implements CHZZRefreshLayout.C
         binding = DataBindingUtil.setContentView(this, R.layout.activity_refresh);
         model = new RefreshViewModel(this, this);
         binding.setViewModel(model);
-
+        CHZZDragView mCHZZDragView = new CHZZDragView(this);
     }
 
     @Override

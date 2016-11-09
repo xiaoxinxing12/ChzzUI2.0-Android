@@ -28,4 +28,11 @@
 
     <integer name="animation_default_duration">300</integer>
     <integer name="height_40">40</integer>
+
+    <dimen name="dragView_textSize">14sp</dimen>
+    <dimen name="dragView_padding">14dp</dimen>
+    <dimen name="drag_iv_width_height">40dp</dimen>
+    <dimen name="drag_margin_5">5dp</dimen>
+    <dimen name="drag_padding_10">10dp</dimen>
+    <dimen name="drop_textSize">14dp</dimen>
 </resources>

@@ -5,7 +5,7 @@
 
     <TextView
         android:id="@+id/gridview_child_name_tv"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/default_btn_selector"
         android:gravity="center"
